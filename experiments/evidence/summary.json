@@ -1,0 +1,24 @@
+{
+  "all_pass": 0.5,
+  "contract_pass": 0.5,
+  "factual_probe_pass": 1.0,
+  "length_pass": 0.6944,
+  "required_pass": 0.8333,
+  "safety_pass": 1.0,
+  "n": 36,
+  "completed": 36,
+  "errors": 0,
+  "calls": 36,
+  "estimated_usd": 0.040105,
+  "input_tokens": 43590,
+  "output_tokens": 14604,
+  "median_seconds": 5.45,
+  "mean_seconds": 6.141,
+  "issue_counts": {
+    "length": 25,
+    "hashtags": 18,
+    "product": 9,
+    "required": 1
+  },
+  "probe_flags": 0
+}

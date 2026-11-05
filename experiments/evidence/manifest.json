@@ -1,0 +1,15 @@
+{
+  "stage": "evidence",
+  "repeat": 2,
+  "started_at": "2026-11-05T01:59:58.783249+00:00",
+  "git_commit": "6f5daacc561b345bae3a029dae1a3eb7dc5350c9",
+  "hashes": {
+    "data\\evalset_v1.jsonl": "09946c35fe481a16310fb6ceea870b16529b6a50ef17eb4bf9686c8aa59b41e6",
+    "src\\gage_hanjul\\evaluation.py": "0a6cbf5cec44ed1a0b101f74fb92c69d3591ea2eddd0128550dd5a8ae472d7b9",
+    "src\\gage_hanjul\\validation.py": "bb8f1475da8de43867ebea1882a7a621526018a484c5c0a87625f09c3ea0c4fa",
+    "prompts\\baseline.txt": "ef08999fa3d370a60b7194311aec1e427d767dbfd68724b021e0a0d7bff7b3cb",
+    "prompts\\evidence.txt": "6a43b18a28ef02e756fbaf179435ad78e881f67627832baa3bdfe2f9d050a6e3"
+  },
+  "max_calls": 36,
+  "cost_note": "gpt-5-mini 표준 텍스트 요율, 캐시 할인 미반영. 사진 평가 없음."
+}
