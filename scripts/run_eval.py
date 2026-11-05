@@ -13,7 +13,7 @@ from gage_hanjul.provider import GenerationError # API 오류 유형
 from gage_hanjul.evaluation import score, summarize # 공통 평가 도구
 def main(): # 실험 실행 함수
     parser = argparse.ArgumentParser() # 옵션 해석 도구
-    parser.add_argument("--stage", choices=["baseline"], default="baseline") # 평가 버전 옵션
+    parser.add_argument("--stage", choices=["baseline", "evidence"], default="baseline") # 평가 버전 옵션
     parser.add_argument("--repeat", type=int, default=2, choices=[1, 2]) # 반복 수 제한
     parser.add_argument("--limit", type=int, default=18) # 실행 건수 옵션
     parser.add_argument("--out", default="experiments/baseline") # 결과 폴더 옵션

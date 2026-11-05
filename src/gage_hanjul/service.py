@@ -23,10 +23,13 @@ def prepare_image(data: bytes) -> str: # 업로드 사진을 준비하는 함수
         raise GenerationError("PNG·JPG·WEBP 상품 사진을 확인해주세요.") from None # 사진 수정 안내
     return "data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode() # API에 전달할 사진 문자열
 def generate(brief: Brief, stage: str = "baseline", image: bytes | None = None, api_key: str | None = None) -> dict: # 광고 세 가지를 만드는 함수
-    if stage != "baseline": # 아직 구현하지 않은 실험을 막는 조건
-        raise ValueError("지원하는 버전은 baseline이에요.") # 잘못된 버전 안내
+    if stage not in {"baseline", "evidence"}: # 지원하지 않는 실험을 막는 조건
+        raise ValueError("지원하는 버전은 baseline 또는 evidence예요.") # 잘못된 버전 안내
     instructions = (ROOT / "prompts" / "baseline.txt").read_text(encoding="utf-8") # 기본 프롬프트
     payload = {"brief": brief.model_dump(), "channel_limits": CHANNELS[brief.channel]} # 상품 정보와 글자 수 기준
+    if stage == "evidence": # 첫 번째 개선 실험 조건
+        instructions += "\n" + (ROOT / "prompts" / "evidence.txt").read_text(encoding="utf-8") # 근거 원장 작성 지시 추가
+        payload["fact_ledger"] = [{"id": index, "text": fact} for index, fact in enumerate(brief.facts, 1)] # 원문과 사실 번호를 연결하는 도구
     bundle, meta = call_openai(instructions, payload, prepare_image(image) if image else None, api_key) # 광고 생성 요청
     issues = validate(bundle, brief) # 결과를 자동 점검하는 도구
     return {"stage": stage, "brief": brief.model_dump(), "bundle": bundle.model_dump(), "issues": issues, "ready": not issues, "calls": [meta]} # 광고와 점검 내역을 반환하는 도구
