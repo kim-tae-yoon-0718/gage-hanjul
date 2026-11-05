@@ -1,0 +1,21 @@
+{
+  "stage": "repair",
+  "started_at": "2026-11-05T02:02:50.611249+00:00",
+  "git_commit": "2c3ccfc3f529b52e8eee11679a2e3919bac7b22f",
+  "hashes": {
+    "data\\evalset_v1.jsonl": "09946c35fe481a16310fb6ceea870b16529b6a50ef17eb4bf9686c8aa59b41e6",
+    "src\\gage_hanjul\\cli.py": "f4b8b9b7f2fa5cef5985dbc4b3409cf23913f903924289e1c918b3bc5bd324c3",
+    "src\\gage_hanjul\\evaluation.py": "0a6cbf5cec44ed1a0b101f74fb92c69d3591ea2eddd0128550dd5a8ae472d7b9",
+    "src\\gage_hanjul\\models.py": "d65d7e1d2fc33c6e84a55f1e76be558444bd24b1ffa6c9fef8d4e53358defe7e",
+    "src\\gage_hanjul\\provider.py": "568b123bcf078bc6511f1c89aab8fa4c5578253b7e12fda1f552a1b91b2f663e",
+    "src\\gage_hanjul\\service.py": "4f889b0cb0f73f9b67dadb1c4df64d45071d686ea9069479249b7b6a87da42bc",
+    "src\\gage_hanjul\\validation.py": "bb8f1475da8de43867ebea1882a7a621526018a484c5c0a87625f09c3ea0c4fa",
+    "src\\gage_hanjul\\__init__.py": "90a223dc64f684f760b214de48116df42101c218b18922e1a1115cc136c62564",
+    "prompts\\baseline.txt": "ef08999fa3d370a60b7194311aec1e427d767dbfd68724b021e0a0d7bff7b3cb",
+    "prompts\\evidence.txt": "6a43b18a28ef02e756fbaf179435ad78e881f67627832baa3bdfe2f9d050a6e3",
+    "prompts\\repair.txt": "734d6ffeffbfc51383126e5417a8aabbaa1022866af8d1fa192ca2eed23f41bb",
+    "experiments\\evidence\\responses.jsonl": "f80df9d8d89563644fa4ad7007c31c576fd2ad194283388f6d5b469fa3e9d4f5"
+  },
+  "source": "experiments\\evidence\\responses.jsonl",
+  "design": "실험 1의 동일 초안을 재사용. 통과 초안은 그대로, 실패 초안은 최대 한 번 수정. 정답 표지는 수정 프롬프트에 전달하지 않음."
+}

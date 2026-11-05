@@ -1,0 +1,5 @@
+{
+  "implementation_commit": "9394cc1",
+  "initial_head_in_manifest": "6f5daac",
+  "note": "첫 실험 시작 당시 Git 쓰기 권한으로 커밋 기록이 지연되어 manifest의 HEAD는 이전 커밋을 가리킨다. 실험 시작 전 프롬프트 해시는 저장되었고 평가 중 구현은 바꾸지 않았다. 실제 첫 개선 소스는 implementation_commit에서 확인한다."
+}

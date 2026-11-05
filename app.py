@@ -1,7 +1,6 @@
 #@title 가게한줄 광고 제작 화면
 #@markdown 상품 정보를 입력하면 광고 3개와 점검 결과를 보고 문구를 내려받을 수 있어요.
 import json # 예제와 다운로드 결과를 다루는 도구
-import time # 사용자 대기 시간을 측정하는 도구
 from pathlib import Path # 프로젝트 파일을 읽는 도구
 import streamlit as st # 광고 제작 화면 도구
 from gage_hanjul.models import Brief, CHANNELS # 상품 정보와 채널 기준
@@ -70,7 +69,13 @@ with right: # 생성 결과 영역
                 st.write("• " + warning) # 확인 사항 표시
             for issue in result["issues"]: # 자동 점검 문제 반복
                 st.write(f"광고안 {issue['variant']}: {issue['detail']}") # 문제 위치 표시
-            st.json(result["brief"]["facts"]) # 입력 사실 표시
+            st.json(result["brief"]) # 현재 결과 생성에 사용한 조건 표시
+            for index, item in enumerate(result["bundle"]["variants"], 1): # 근거 연결 표시 반복
+                st.caption(f"광고안 {index} 사용 사실: {item['used_fact_ids']}") # 광고별 사실 번호 표시
+            if result.get("repair_error"): # 단일 수정 호출이 실패한 조건
+                st.warning(result["repair_error"]) # 수정 실패를 숨기지 않는 안내
+            if result["bundle"]["image_notes"]: # 사진 참고 내용이 있는 조건
+                st.write("사진에서 참고한 내용: " + result["bundle"]["image_notes"]) # 외형 참고 내역 표시
             st.caption("근거 번호는 모델의 자기 보고이며 사실성 전체를 검증하지 않아요.") # 검증 한계 안내
         st.download_button("문구 내려받기 (.md)", to_markdown(result), "gage-hanjul.md", "text/markdown") # 문구 다운로드
         st.download_button("점검 내역 내려받기 (.json)", json.dumps(result, ensure_ascii=False, indent=2), "gage-hanjul.json", "application/json") # 상세 결과 다운로드

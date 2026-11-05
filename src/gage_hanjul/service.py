@@ -22,7 +22,7 @@ def prepare_image(data: bytes) -> str: # 업로드 사진을 준비하는 함수
     except (OSError, ValueError, Image.DecompressionBombError): # 손상된 사진과 과도한 사진 처리
         raise GenerationError("PNG·JPG·WEBP 상품 사진을 확인해주세요.") from None # 사진 수정 안내
     return "data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode() # API에 전달할 사진 문자열
-def generate(brief: Brief, stage: str = "baseline", image: bytes | None = None, api_key: str | None = None) -> dict: # 광고 세 가지를 만드는 함수
+def generate(brief: Brief, stage: str = "repair", image: bytes | None = None, api_key: str | None = None) -> dict: # 광고 세 가지를 만드는 함수
     if stage not in {"baseline", "evidence", "repair"}: # 지원하지 않는 실험을 막는 조건
         raise ValueError("지원하는 버전은 baseline, evidence, repair예요.") # 잘못된 버전 안내
     instructions = (ROOT / "prompts" / "baseline.txt").read_text(encoding="utf-8") # 기본 프롬프트

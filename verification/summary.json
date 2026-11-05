@@ -1,0 +1,97 @@
+{
+  "actual_date": "2026-11-05",
+  "automated_tests": 15,
+  "formal_eval_calls": 90,
+  "formal_eval_estimated_usd": 0.10084624999999998,
+  "functional_calls": 7,
+  "functional_estimated_usd": 0.010630500000000001,
+  "total_estimated_usd": 0.11147674999999997,
+  "checks": [
+    {
+      "name": "baseline_smoke_online.json",
+      "ready": true,
+      "calls": [
+        {
+          "response_id": "resp_0f41ee54a53fd029016aebe27f848487d297af8d296c176f18",
+          "model": "gpt-5-mini-2025-08-07",
+          "input_tokens": 860,
+          "output_tokens": 480,
+          "seconds": 8.282,
+          "estimated_usd": 0.001175
+        }
+      ]
+    },
+    {
+      "name": "final_smoke.json",
+      "ready": true,
+      "calls": [
+        {
+          "response_id": "resp_0251178ba7c649c6016aebe43fbb6087d2a283d43b319572c4",
+          "model": "gpt-5-mini-2025-08-07",
+          "input_tokens": 1217,
+          "output_tokens": 627,
+          "seconds": 7.929,
+          "estimated_usd": 0.00155825
+        },
+        {
+          "response_id": "resp_0a592d20ba5ea5cc016aebe447610c87d29f1178665577a946",
+          "model": "gpt-5-mini-2025-08-07",
+          "input_tokens": 2121,
+          "output_tokens": 525,
+          "seconds": 7.019,
+          "estimated_usd": 0.00158025
+        }
+      ]
+    },
+    {
+      "name": "ui_result.json",
+      "ready": true,
+      "calls": [
+        {
+          "response_id": "resp_09c9152941d861c1016aebe50a0b0487d2b2a24a382ffcfcfb",
+          "model": "gpt-5-mini-2025-08-07",
+          "input_tokens": 1217,
+          "output_tokens": 549,
+          "seconds": 6.962,
+          "estimated_usd": 0.00140225
+        },
+        {
+          "response_id": "resp_0a83c81a52185bac016aebe510eb9487d29abcfa8b6fb75e1c",
+          "model": "gpt-5-mini-2025-08-07",
+          "input_tokens": 2044,
+          "output_tokens": 454,
+          "seconds": 5.162,
+          "estimated_usd": 0.001419
+        }
+      ]
+    },
+    {
+      "name": "image_smoke",
+      "ready": true,
+      "calls": [
+        {
+          "response_id": "resp_0b3de0494f8fbd69016aebe4ce9d1487d2aaf59aa0a24d9a91",
+          "model": "gpt-5-mini-2025-08-07",
+          "input_tokens": 1698,
+          "output_tokens": 590,
+          "seconds": 7.598,
+          "estimated_usd": 0.0016045
+        },
+        {
+          "response_id": "resp_0a34d1241b223fcf016aebe4d6703887d2981bcc1b896921a4",
+          "model": "gpt-5-mini-2025-08-07",
+          "input_tokens": 2565,
+          "output_tokens": 625,
+          "seconds": 8.403,
+          "estimated_usd": 0.00189125
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "기능 점검은 세 번째 모델 개선 실험이 아닙니다.",
+    "비용은 캐시 할인 미반영 추정값입니다.",
+    "UI 생성과 JSON 다운로드를 Chrome에서 확인했습니다.",
+    "정식 비교는 텍스트 입력만 사용했으며 사진은 합성 그림으로 별도 기능 점검했습니다."
+  ]
+}

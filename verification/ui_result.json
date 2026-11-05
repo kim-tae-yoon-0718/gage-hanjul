@@ -1,0 +1,114 @@
+{
+  "stage": "repair",
+  "brief": {
+    "store": "오후한잔",
+    "product": "딸기 라떼",
+    "audience": "퇴근길에 잠깐 쉬고 싶은 동네 직장인",
+    "tone": "다정한",
+    "channel": "instagram",
+    "facts": [
+      "한 잔 가격 5500원",
+      "딸기청과 우유를 넣은 음료",
+      "포장 가능"
+    ],
+    "required_phrase": "오늘도 수고했어요",
+    "forbidden_words": [
+      "최저가",
+      "건강"
+    ],
+    "request": "퇴근길의 작은 휴식이라는 분위기로 써주세요."
+  },
+  "bundle": {
+    "variants": [
+      {
+        "headline": "퇴근길 달콤한 한 모금",
+        "body": "오늘도 수고했어요. 오후한잔의 딸기 라떼로 잠깐의 휴식 어떠세요? 딸기청과 우유를 부드럽게 섞은 음료이며 포장 가능해 이동 중에도 좋습니다. 한 잔 가격 5500원.",
+        "cta": "가까운 매장으로 오세요",
+        "hashtags": [
+          "#퇴근길한잔",
+          "#딸기라떼",
+          "#작은행복"
+        ],
+        "used_fact_ids": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "headline": "잠깐의 달콤한 쉼",
+        "body": "오늘도 수고했어요. 딸기청과 우유가 어우러진 딸기 라떼 한 잔으로 잠깐 쉬어가세요. 포장 가능하니 이동 중에도 부담 없이 즐기실 수 있습니다. 한 잔 5500원.",
+        "cta": "포장 주문하기",
+        "hashtags": [
+          "#오늘도수고했어요",
+          "#퇴근커피",
+          "#딸기라떼"
+        ],
+        "used_fact_ids": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "headline": "퇴근길, 작은 위로 한 컵",
+        "body": "오늘도 수고했어요. 오후한잔의 딸기 라떼—딸기청과 우유를 담아 만든 음료로 달콤한 숨을 고르세요. 포장 가능하며 한 잔 가격은 5500원입니다.",
+        "cta": "테이크아웃 하러 가기",
+        "hashtags": [
+          "#퇴근힐링",
+          "#작은행복",
+          "#딸기라떼"
+        ],
+        "used_fact_ids": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "warnings": [
+      "인스타그램용 해시태그는 정확히 3개로 맞췄습니다.",
+      "요청 분위기(퇴근길의 작은 휴식) 반영해 문구를 다정한 톤으로 조정했습니다.",
+      "금지어(최저가, 건강)는 사용하지 않았습니다."
+    ],
+    "image_notes": ""
+  },
+  "issues": [],
+  "ready": true,
+  "calls": [
+    {
+      "response_id": "resp_09c9152941d861c1016aebe50a0b0487d2b2a24a382ffcfcfb",
+      "model": "gpt-5-mini-2025-08-07",
+      "input_tokens": 1217,
+      "output_tokens": 549,
+      "seconds": 6.962,
+      "estimated_usd": 0.00140225
+    },
+    {
+      "response_id": "resp_0a83c81a52185bac016aebe510eb9487d29abcfa8b6fb75e1c",
+      "model": "gpt-5-mini-2025-08-07",
+      "input_tokens": 2044,
+      "output_tokens": 454,
+      "seconds": 5.162,
+      "estimated_usd": 0.001419
+    }
+  ],
+  "repair_attempted": true,
+  "draft_issues": [
+    {
+      "code": "hashtags",
+      "variant": 1,
+      "detail": "해시태그는 3개가 필요해요."
+    },
+    {
+      "code": "hashtags",
+      "variant": 2,
+      "detail": "해시태그는 3개가 필요해요."
+    },
+    {
+      "code": "hashtags",
+      "variant": 3,
+      "detail": "해시태그는 3개가 필요해요."
+    }
+  ]
+}

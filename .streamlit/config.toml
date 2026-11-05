@@ -1,0 +1,11 @@
+#@title 로컬 화면 실행 설정
+#@markdown 업로드 용량을 5MB로 제한하고 서비스에 맞는 색상을 적용해요.
+[server] # 로컬 실행 설정
+maxUploadSize = 5 # 사진 업로드 최대 MB
+[browser] # 브라우저 설정
+gatherUsageStats = false # 사용 통계 수집을 끄는 설정
+[theme] # 화면 색상 설정
+primaryColor = "#156854" # 주요 버튼 색상
+backgroundColor = "#f7f6f1" # 배경 색상
+secondaryBackgroundColor = "#eeeee5" # 입력 영역 배경
+textColor = "#20332e" # 본문 글자 색상

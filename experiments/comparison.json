@@ -1,0 +1,1272 @@
+{
+  "baseline": {
+    "all_pass": 0.3889,
+    "contract_pass": 0.4167,
+    "factual_probe_pass": 0.8889,
+    "length_pass": 0.6667,
+    "required_pass": 0.8056,
+    "safety_pass": 0.8889,
+    "n": 36,
+    "completed": 36,
+    "errors": 0,
+    "calls": 36,
+    "estimated_usd": 0.037017,
+    "input_tokens": 30900,
+    "output_tokens": 14646,
+    "median_seconds": 4.988,
+    "mean_seconds": 5.206,
+    "issue_counts": {
+      "length": 26,
+      "hashtags": 21,
+      "number": 3,
+      "product": 10,
+      "required": 1
+    },
+    "probe_flags": 12,
+    "repeat_agreement": 0.7777777777777778,
+    "channels": {
+      "instagram": {
+        "all_pass": 0.4167,
+        "contract_pass": 0.4167,
+        "factual_probe_pass": 0.75,
+        "length_pass": 1.0,
+        "required_pass": 0.8333,
+        "safety_pass": 0.75,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 12,
+        "estimated_usd": 0.014533,
+        "input_tokens": 10308,
+        "output_tokens": 5978,
+        "median_seconds": 6.163,
+        "mean_seconds": 6.414,
+        "issue_counts": {
+          "hashtags": 21,
+          "number": 3,
+          "required": 1,
+          "product": 2
+        },
+        "probe_flags": 11
+      },
+      "sms": {
+        "all_pass": 0.75,
+        "contract_pass": 0.8333,
+        "factual_probe_pass": 0.9167,
+        "length_pass": 0.9167,
+        "required_pass": 0.8333,
+        "safety_pass": 0.9167,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 12,
+        "estimated_usd": 0.011828,
+        "input_tokens": 10296,
+        "output_tokens": 4627,
+        "median_seconds": 4.519,
+        "mean_seconds": 4.602,
+        "issue_counts": {
+          "length": 1,
+          "product": 3
+        },
+        "probe_flags": 1
+      },
+      "banner": {
+        "all_pass": 0.0,
+        "contract_pass": 0.0,
+        "factual_probe_pass": 1.0,
+        "length_pass": 0.0833,
+        "required_pass": 0.75,
+        "safety_pass": 1.0,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 12,
+        "estimated_usd": 0.010656,
+        "input_tokens": 10296,
+        "output_tokens": 4041,
+        "median_seconds": 4.572,
+        "mean_seconds": 4.603,
+        "issue_counts": {
+          "length": 25,
+          "product": 5
+        },
+        "probe_flags": 0
+      }
+    },
+    "failures": [
+      {
+        "id": "cafe-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 47자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "bakery-instagram",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "number",
+            "variant": 1,
+            "detail": "확인되지 않은 숫자·단위: 50%"
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "number",
+            "variant": 2,
+            "detail": "확인되지 않은 숫자·단위: 50%"
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": [
+          {
+            "variant": 1,
+            "term": "할인"
+          },
+          {
+            "variant": 1,
+            "term": "50%"
+          },
+          {
+            "variant": 2,
+            "term": "할인"
+          },
+          {
+            "variant": 2,
+            "term": "50%"
+          },
+          {
+            "variant": 3,
+            "term": "할인"
+          }
+        ]
+      },
+      {
+        "id": "bakery-sms",
+        "repeat": 1,
+        "issues": [],
+        "flags": [
+          {
+            "variant": 2,
+            "term": "할인"
+          }
+        ]
+      },
+      {
+        "id": "bakery-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 46자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 49자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "florist-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 57자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 62자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 50자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 53자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-instagram",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-sms",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "headline: 21자, 허용 1~20자"
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "headline: 17자, 허용 1~16자"
+          },
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 46자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 50자, 허용 1~45자"
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "restaurant-instagram",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "required",
+            "variant": 2,
+            "detail": "필수 문구가 빠졌어요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "restaurant-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 48자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 56자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 53자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "cafe-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "cafe-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 58자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 53자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 51자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "bakery-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "number",
+            "variant": 2,
+            "detail": "확인되지 않은 숫자·단위: 50%"
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": [
+          {
+            "variant": 1,
+            "term": "할인"
+          },
+          {
+            "variant": 2,
+            "term": "할인"
+          },
+          {
+            "variant": 2,
+            "term": "50%"
+          },
+          {
+            "variant": 3,
+            "term": "할인"
+          }
+        ]
+      },
+      {
+        "id": "bakery-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 49자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "florist-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 55자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 61자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 52자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 57자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 56자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": [
+          {
+            "variant": 3,
+            "term": "당일"
+          },
+          {
+            "variant": 3,
+            "term": "보장"
+          }
+        ]
+      },
+      {
+        "id": "repair-sms",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 47자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 48자, 허용 1~45자"
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 54자, 허용 1~45자"
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "restaurant-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      }
+    ]
+  },
+  "evidence": {
+    "all_pass": 0.5,
+    "contract_pass": 0.5,
+    "factual_probe_pass": 1.0,
+    "length_pass": 0.6944,
+    "required_pass": 0.8333,
+    "safety_pass": 1.0,
+    "n": 36,
+    "completed": 36,
+    "errors": 0,
+    "calls": 36,
+    "estimated_usd": 0.040105,
+    "input_tokens": 43590,
+    "output_tokens": 14604,
+    "median_seconds": 5.45,
+    "mean_seconds": 6.141,
+    "issue_counts": {
+      "length": 25,
+      "hashtags": 18,
+      "product": 9,
+      "required": 1
+    },
+    "probe_flags": 0,
+    "repeat_agreement": 0.7777777777777778,
+    "channels": {
+      "instagram": {
+        "all_pass": 0.5,
+        "contract_pass": 0.5,
+        "factual_probe_pass": 1.0,
+        "length_pass": 1.0,
+        "required_pass": 0.8333,
+        "safety_pass": 1.0,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 12,
+        "estimated_usd": 0.015307,
+        "input_tokens": 14538,
+        "output_tokens": 5836,
+        "median_seconds": 6.412,
+        "mean_seconds": 7.828,
+        "issue_counts": {
+          "hashtags": 18,
+          "product": 4
+        },
+        "probe_flags": 0
+      },
+      "sms": {
+        "all_pass": 0.9167,
+        "contract_pass": 0.9167,
+        "factual_probe_pass": 1.0,
+        "length_pass": 1.0,
+        "required_pass": 0.9167,
+        "safety_pass": 1.0,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 12,
+        "estimated_usd": 0.01248,
+        "input_tokens": 14526,
+        "output_tokens": 4424,
+        "median_seconds": 4.852,
+        "mean_seconds": 5.382,
+        "issue_counts": {
+          "product": 1
+        },
+        "probe_flags": 0
+      },
+      "banner": {
+        "all_pass": 0.0833,
+        "contract_pass": 0.0833,
+        "factual_probe_pass": 1.0,
+        "length_pass": 0.0833,
+        "required_pass": 0.75,
+        "safety_pass": 1.0,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 12,
+        "estimated_usd": 0.01232,
+        "input_tokens": 14526,
+        "output_tokens": 4344,
+        "median_seconds": 4.762,
+        "mean_seconds": 5.211,
+        "issue_counts": {
+          "length": 25,
+          "product": 4,
+          "required": 1
+        },
+        "probe_flags": 0
+      }
+    },
+    "failures": [
+      {
+        "id": "cafe-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 46자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 53자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 51자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "bakery-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 58자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 54자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 50자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "florist-instagram",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "florist-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 48자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 48자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 55자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 66자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 64자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-instagram",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-sms",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "headline: 17자, 허용 1~16자"
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 53자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "restaurant-instagram",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "restaurant-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 46자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "bakery-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 47자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 48자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "florist-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 1,
+            "detail": "body: 50자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 53자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 52자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 47자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 49자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 48자, 허용 1~45자"
+          },
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 48자, 허용 1~45자"
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "restaurant-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "hashtags",
+            "variant": 1,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 2,
+            "detail": "해시태그는 3개가 필요해요."
+          },
+          {
+            "code": "hashtags",
+            "variant": 3,
+            "detail": "해시태그는 3개가 필요해요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "restaurant-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 46자, 허용 1~45자"
+          },
+          {
+            "code": "required",
+            "variant": 2,
+            "detail": "필수 문구가 빠졌어요."
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 47자, 허용 1~45자"
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      }
+    ]
+  },
+  "repair": {
+    "all_pass": 0.8611,
+    "contract_pass": 0.8611,
+    "factual_probe_pass": 1.0,
+    "length_pass": 0.8889,
+    "required_pass": 0.9167,
+    "safety_pass": 1.0,
+    "n": 36,
+    "completed": 36,
+    "errors": 0,
+    "calls": 54,
+    "estimated_usd": 0.063829,
+    "input_tokens": 78485,
+    "output_tokens": 22104,
+    "median_seconds": 8.666,
+    "mean_seconds": 9.036,
+    "issue_counts": {
+      "length": 6,
+      "product": 3
+    },
+    "probe_flags": 0,
+    "repeat_agreement": 0.8333333333333334,
+    "channels": {
+      "instagram": {
+        "all_pass": 0.9167,
+        "contract_pass": 0.9167,
+        "factual_probe_pass": 1.0,
+        "length_pass": 1.0,
+        "required_pass": 0.9167,
+        "safety_pass": 1.0,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 18,
+        "estimated_usd": 0.024553,
+        "input_tokens": 26788,
+        "output_tokens": 8928,
+        "median_seconds": 11.349,
+        "mean_seconds": 11.098,
+        "issue_counts": {
+          "product": 1
+        },
+        "probe_flags": 0
+      },
+      "sms": {
+        "all_pass": 1.0,
+        "contract_pass": 1.0,
+        "factual_probe_pass": 1.0,
+        "length_pass": 1.0,
+        "required_pass": 1.0,
+        "safety_pass": 1.0,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 13,
+        "estimated_usd": 0.013683,
+        "input_tokens": 16346,
+        "output_tokens": 4798,
+        "median_seconds": 5.197,
+        "mean_seconds": 5.723,
+        "issue_counts": {},
+        "probe_flags": 0
+      },
+      "banner": {
+        "all_pass": 0.6667,
+        "contract_pass": 0.6667,
+        "factual_probe_pass": 1.0,
+        "length_pass": 0.6667,
+        "required_pass": 0.8333,
+        "safety_pass": 1.0,
+        "n": 12,
+        "completed": 12,
+        "errors": 0,
+        "calls": 23,
+        "estimated_usd": 0.025594,
+        "input_tokens": 35351,
+        "output_tokens": 8378,
+        "median_seconds": 10.621,
+        "mean_seconds": 10.286,
+        "issue_counts": {
+          "length": 6,
+          "product": 2
+        },
+        "probe_flags": 0
+      }
+    },
+    "failures": [
+      {
+        "id": "bakery-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 49자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 51자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 47자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-banner",
+        "repeat": 1,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 2,
+            "detail": "body: 48자, 허용 1~45자"
+          },
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 51자, 허용 1~45자"
+          },
+          {
+            "code": "product",
+            "variant": 3,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "beauty-banner",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "length",
+            "variant": 3,
+            "detail": "body: 49자, 허용 1~45자"
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "repair-instagram",
+        "repeat": 2,
+        "issues": [
+          {
+            "code": "product",
+            "variant": 2,
+            "detail": "상품명이 빠졌어요."
+          }
+        ],
+        "flags": []
+      }
+    ]
+  },
+  "physical_eval_calls": 90,
+  "physical_eval_estimated_usd": 0.10084625,
+  "frozen_hashes_equal": {
+    "data/evalset_v1.jsonl": true,
+    "src/gage_hanjul/evaluation.py": true,
+    "src/gage_hanjul/validation.py": true
+  }
+}

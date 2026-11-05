@@ -1,0 +1,11 @@
+#@title Git 파일 형식 보존
+#@markdown 문서는 같은 줄바꿈으로 저장하고 PDF와 이미지는 원본 바이트를 보존해요.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary

@@ -9,7 +9,7 @@ from .service import generate, to_markdown # 광고 생성과 문서 변환 도�
 def main(): # 터미널 진입 함수
     parser = argparse.ArgumentParser(description="가게한줄 광고 문구 생성") # 명령 설명 도구
     parser.add_argument("--brief", default="examples/cafe.json") # 입력 파일 옵션
-    parser.add_argument("--stage", default="baseline", choices=["baseline", "evidence", "repair"]) # 생성 버전 옵션
+    parser.add_argument("--stage", default="repair", choices=["baseline", "evidence", "repair"]) # 생성 버전 옵션
     parser.add_argument("--image") # 선택 사진 옵션
     parser.add_argument("--out", default=".local/ad") # 저장 위치 옵션
     args = parser.parse_args() # 실행 옵션을 읽는 도구

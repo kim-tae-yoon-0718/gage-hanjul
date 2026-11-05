@@ -18,6 +18,8 @@ def load_env(path: str = ".env") -> None: # 로컬 설정 파일을 읽는 함�
                 os.environ.setdefault(key.strip(), value.strip().strip("\"'")) # 기존 환경변수 우선으로 설정하는 도구
 def call_openai(instructions: str, payload: dict, image_url: str | None = None, api_key: str | None = None) -> tuple[AdBundle, dict]: # 광고 생성 요청 함수
     load_env() # 로컬 환경 설정을 읽는 도구
+    if os.getenv("OPENAI_MODEL", "gpt-5-mini") not in {"gpt-5-mini", "gpt-5-mini-2025-08-07"}: # 요율과 실험 조건이 다른 모델을 막는 조건
+        raise GenerationError("이 버전은 gpt-5-mini만 지원해요. OPENAI_MODEL 설정을 확인해주세요.") # 부정확한 비용 안내 방지
     secret = api_key or os.getenv("OPENAI_API_KEY", "") # 사용자 키를 읽는 도구
     if not secret.strip(): # 키 누락 조건
         raise GenerationError("OpenAI API 키를 입력하거나 .env에 설정해주세요.") # 설정 방법을 안내하는 오류
