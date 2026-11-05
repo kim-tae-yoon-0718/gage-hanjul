@@ -1,0 +1,13 @@
+# 로컬 비밀값과 개발 환경을 GitHub 업로드에서 제외하는 설정
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.local/
+tmp/
+dist/
+*.egg-info/
+.streamlit/secrets.toml

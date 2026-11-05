@@ -1,0 +1,11 @@
+{
+  "store": "오후한잔",
+  "product": "딸기 라떼",
+  "audience": "퇴근길에 잠깐 쉬고 싶은 동네 직장인",
+  "tone": "다정한",
+  "channel": "instagram",
+  "facts": ["한 잔 가격 5500원", "딸기청과 우유를 넣은 음료", "포장 가능"],
+  "required_phrase": "오늘도 수고했어요",
+  "forbidden_words": ["최저가", "건강"],
+  "request": "퇴근길의 작은 휴식이라는 분위기로 써주세요."
+}

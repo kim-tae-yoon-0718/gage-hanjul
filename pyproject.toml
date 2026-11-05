@@ -1,0 +1,20 @@
+#@title 가게한줄 실행 환경
+#@markdown 설치하면 광고 생성 CLI와 Streamlit 앱을 실행할 수 있어요.
+[build-system] # 패키지 설치 도구를 정하는 영역
+requires = ["setuptools>=68"] # 패키지 빌드 도구
+build-backend = "setuptools.build_meta" # 빌드 실행기
+[project] # 프로젝트 기본 정보
+name = "gage-hanjul" # 설치 이름
+version = "1.0.0" # 첫 완성 버전
+description = "소상공인을 위한 근거 기반 광고 문구 생성기" # 프로젝트 설명
+requires-python = ">=3.10" # 지원 Python 버전
+dependencies = ["pydantic>=2.8,<3", "streamlit>=1.40,<2", "Pillow>=10,<13"] # 실행에 필요한 도구
+[project.optional-dependencies] # 개발할 때 선택하는 도구
+dev = ["pytest>=8,<10", "reportlab>=4,<6", "pypdf>=5,<7", "pymupdf>=1.24,<2"] # 테스트 및 보고서 도구
+[project.scripts] # 터미널 진입점
+gage-hanjul = "gage_hanjul.cli:main" # 광고 생성 명령
+[tool.setuptools.packages.find] # 소스 위치
+where = ["src"] # 패키지 검색 폴더
+[tool.pytest.ini_options] # 테스트 설정
+testpaths = ["tests"] # 테스트 폴더
+pythonpath = ["src"] # 소스 가져오기 경로
