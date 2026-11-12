@@ -9,10 +9,10 @@
 ## 바로 확인할 자료
 
 - **[프로젝트 보고서 PDF 내려받기](output/pdf/project_report.pdf)** · [보고서 본문](docs/report.md)
-- **[업무일지 · 로그인 없이 보기 (PDF)](output/pdf/worklog.pdf)** · [Notion 원본](https://app.notion.com/p/40f9556c393781c4b32fc59623f10894)
+- **[Notion 업무일지 · 로그인 없이 보기](https://helix-parmesan-073.notion.site/40f9556c393781c4b32fc59623f10894)** · [업무일지 PDF 사본](output/pdf/worklog.pdf)
 - [실험 원본과 점수](experiments) · [고정 평가 설계](docs/experiment_plan.md) · [생성 문구 직접 검토](docs/manual_review.md)
 
-업무일지 PDF는 로그인 없이 볼 수 있습니다. Notion 원본은 페이지 접근 권한이 필요할 수 있습니다. 업무일지는 실제 수행일인 **2026-11-05**의 작업을 요청에 따라 11월 1~5일 단계로 나눈 회고입니다.
+Notion 업무일지와 하위 날짜별 글 5개는 로그인 없이 볼 수 있습니다. PDF 사본도 함께 제공합니다. 업무일지는 실제 수행일인 **2026-11-05**의 작업을 요청에 따라 11월 1~5일 단계로 나눈 회고입니다.
 
 ## 무엇을 할 수 있나요?
 
